@@ -36,22 +36,22 @@ const FooterOne = () => {
   return (
     <>
       <footer className="cs_footer cs_primary_bg">
-        <div className="cs_height_150 cs_height_lg_60"></div>
+        <div className="cs_height_50 cs_height_lg_20"></div>
         <div className="container">
           <div className="row">
             <div className="col-lg-5">
               <div className="cs_footer_info">
                 <Image src={footer_logo} alt="Logo" />
                 <p>{footer_info}</p>
-                <a href={`mailto:${email}`}
-                  className="cs_primary_font anim_text_upanddowns"><span>{email}</span></a>
+                {/* <a href={`mailto:${email}`}
+                  className="cs_primary_font anim_text_upanddowns"><span>{email}</span></a> */}
               </div>
             </div>
             <div className="col-lg-6 offset-lg-1">
               <div className="cs_footer_social">
                 <SocialLinks />
               </div>
-              <div className="cs_height_60 cs_height_lg_30"></div>
+              <div className="cs_height_10 cs_height_lg_30"></div>
               <ul className="cs_footer_contact_list cs_mp0">
                 <li>
                   <i>
@@ -105,7 +105,7 @@ const FooterOne = () => {
               </ul>
             </div>
           </div>
-          <div className="cs_height_90 cs_height_lg_60"></div>
+          <div className="cs_height_10 cs_height_lg_20"></div>
           <ul className="cs_footer_nav">
             {links.map((item, index) => (
               <li key={index}><Link href={item.link}>{item.title}</Link></li>

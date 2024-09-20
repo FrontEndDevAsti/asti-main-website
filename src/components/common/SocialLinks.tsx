@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { BsTwitterX } from "react-icons/bs";
-import { FaFacebookF, FaLinkedinIn, FaInstagram, FaTiktok, FaWhatsapp, FaYoutube } from 'react-icons/fa'; // Importing Font Awesome Icons
+import { FaFacebookF, FaLinkedinIn, FaInstagram, FaTiktok, FaWhatsapp, FaYoutube } from 'react-icons/fa'; 
 
 // hero social links home three
 interface HDataType {
@@ -12,45 +12,45 @@ interface HDataType {
 const hero_link_home_three: HDataType[] = [
   {
     id: 1,
-    link: "https://www.facebook.com",
+    link: "https://www.facebook.com/AstiUAE",
     title: "Facebook",
-    icon: <FaFacebookF />, // Facebook Icon
+    icon: <FaFacebookF />, 
   },
   {
     id: 2,
-    link: "https://www.linkedin.com",
+    link: "https://www.linkedin.com/school/astiacademy/",
     title: "Linkedin",
-    icon: <FaLinkedinIn />, // LinkedIn Icon
+    icon: <FaLinkedinIn />, 
   },
   {
     id: 3,
-    link: "https://www.instagram.com",
+    link: "https://www.instagram.com/astiacademy/",
     title: "Instagram",
-    icon: <FaInstagram />, // Instagram Icon
+    icon: <FaInstagram />, 
   },
   {
     id: 4,
-    link: "https://www.twitter.com",
+    link: "https://x.com/astiacademy",
     title: "Twitter",
-    icon: <BsTwitterX />, // Twitter Icon
+    icon: <BsTwitterX />,
   },
   {
     id: 5,
-    link: "https://www.dribbble.com",
+    link: "https://www.youtube.com/@astiacademy",
     title: "Youtube",
-    icon: <FaYoutube />, // Dribbble Icon
+    icon: <FaYoutube />,
   },
   {
     id: 6,
     link: "https://www.dribbble.com",
     title: "Whatsapp",
-    icon: <FaWhatsapp />, // Dribbble Icon
+    icon: <FaWhatsapp />, 
   },
   {
     id: 7,
     link: "https://www.dribbble.com",
     title: "Tiktok",
-    icon: <FaTiktok />, // Dribbble Icon
+    icon: <FaTiktok />, 
   }
 ]
 export const SocialLinks = () => {
@@ -80,7 +80,7 @@ type copy_right_text_type = {
 
 const copy_right_text: copy_right_text_type = {
   copy_right: <>
-    Copyright {new Date().getFullYear()}, All Right reserved
+    Copyright {new Date().getFullYear()}, Asti Academy.
   </>
 }
 
