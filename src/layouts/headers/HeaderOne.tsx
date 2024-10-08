@@ -26,34 +26,49 @@ interface DataType {
 const menu_data: DataType[] = [
 	{
 		id: 1,
-		title: "Home",
-		link: "/",
+		title: "About Us",
+		link: "",
 		has_dropdown: true,
 		sub_menu: [
 			{
 				id: 1,
-				title: "Digital Agency",
-				link: "/",
+				title: "About ASTI",
+				link: "/about",
 			},
 			{
 				id: 2,
-				title: "Startup Agency",
-				link: "/startup-agency",
+				title: "History & Facts",
+				link: "/history-and-facts",
 			},
 			{
 				id: 3,
-				title: "Design Studio",
-				link: "/design-studio",
+				title: "Mission & Vision",
+				link: "/mission-and-vision",
 			},
 			{
 				id: 4,
-				title: "Creative Protfolio",
-				link: "/creative-protfolio",
+				title: "Why Choose ASTI",
+				link: "/why-choose-asti",
 			},
 			{
 				id: 5,
-				title: "Marketing Agency",
-				link: "/marketing-agency",
+				title: "Careers",
+				link: "/careers",
+			},
+			{
+				id: 6,
+				title: "Our Team",
+				link: "/team",
+			},
+			{
+				id: 7,
+				title: "Alumni",
+				link: "/alumni",
+			},
+			{
+				id: 8,
+				title: "Affiliation and Accreditation",
+				link: "/affiliation-and-accreditation",
 			},
 		]
 	},
@@ -65,7 +80,7 @@ const menu_data: DataType[] = [
 	},
 	{
 		id: 3,
-		title: "Pages",
+		title: "Academics",
 		link: "/about",
 		has_dropdown: true,
 		sub_menu: [
@@ -139,18 +154,18 @@ const menu_data: DataType[] = [
 	},
 	{
 		id: 6,
-		title: "Blog",
+		title: "Media",
 		link: "/blog",
 		has_dropdown: true,
 		sub_menu: [
 			{
 				id: 1,
-				title: "Blog",
+				title: "Blogs",
 				link: "/blog",
 			},
 			{
 				id: 2,
-				title: "Blog Details",
+				title: "News & Events",
 				link: "/blog-details",
 			}
 		]
@@ -246,7 +261,7 @@ const HeaderOne = () => {
 									<MobileMenu active={active} navTitle={navTitle} openMobileMenu={openMobileMenu} />
 									<span className={`cs_munu_toggle ${active ? "cs_toggle_active" : ""}`} onClick={handleActive}><span></span></span>
 								</div>
-								<div className="cs_toolbox">
+								{/* <div className="cs_toolbox">
 									<span className="cs_icon_btn">
 										<span className="cs_icon_btn_in" onClick={handleActive}>
 											<span></span>
@@ -255,14 +270,14 @@ const HeaderOne = () => {
 											<span></span>
 										</span>
 									</span>
-								</div>
+								</div> */}
 							</div>
 						</div>
 					</div>
 				</div>
 			</header>
 
-
+{/* 
 			<div className={`cs_side_header ${active ? "active" : ""}`}>
 				<button className="cs_close" onClick={handleActive}></button>
 				<div className="cs_side_header_overlay"></div>
@@ -343,7 +358,7 @@ const HeaderOne = () => {
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> */}
 
 
 

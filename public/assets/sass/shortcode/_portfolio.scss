@@ -46,6 +46,8 @@
 }
 
 
+
+
 /* end design studio page portfolio */
 
 // start  Some Recent Project
@@ -89,7 +91,7 @@
         .active {
             color: $accent;
         }
-        margin-bottom: 100px;
+        margin-bottom: 50px;
     }
 }
 
@@ -251,8 +253,8 @@
     .cs_portfolio_info {
         width: 100%;
         position: absolute;
-        bottom: -30px;
-        opacity: 0;
+        bottom: 2px;
+        // opacity: 0;
         transition: all 0.5s ease;
         .cs_text.cs_style_1 {
             margin: 25px;

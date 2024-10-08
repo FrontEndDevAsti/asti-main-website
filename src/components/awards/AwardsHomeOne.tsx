@@ -64,7 +64,7 @@ const AwardsHomeOne = ({style_2}: any) => {
                 Our Awards
               </div>
               <h2 className="cs_section_title anim_heading_title">
-                Recognizing Excellence Our Award Winning Work
+                Social Media
               </h2>
             </div>
           </div>

@@ -7,9 +7,10 @@ interface CountType {
   number: number;
   text?: string;
   add_style?: boolean;
+  isPlus?: boolean; 
 }
 
-const Count = ({ number, text, add_style }: CountType) => {
+const Count = ({ number, text, add_style,isPlus }: CountType) => {
   const [focus, setFocus] = useState<boolean>(false);
   const visibleChangeHandler = (isVisible: boolean) => {
     if (isVisible) {
@@ -25,6 +26,7 @@ const Count = ({ number, text, add_style }: CountType) => {
         {({ countUpRef }) => (
           <div className={`d-flex ${add_style ? "align-items-center justify-content-center" : ""} `}>
             <strong ref={countUpRef} />
+            {isPlus && <span>+</span>}
             <InView
               as="span"
               onChange={(inView: any) => visibleChangeHandler(inView)}>

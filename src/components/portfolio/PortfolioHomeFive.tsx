@@ -59,7 +59,7 @@ const PortfolioHomeFive = () => {
           <div className="cs_section_heading cs_style_1 cs_type_2">
             <div className="cs_section_heading_text">
               <div className="cs_section_subtitle anim_div_ShowZoom">
-                Case Study
+                Our Programs
               </div>
               <h2 className="cs_section_title anim_heading_title">
                 Some Recent Case Study We Successfully Done

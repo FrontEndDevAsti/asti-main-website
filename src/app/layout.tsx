@@ -1,6 +1,5 @@
-
 import "@/styles/index.scss";
-
+import "@/styles/global.css";
 
 export default function RootLayout({
   children,
@@ -9,7 +8,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-        <head>
+      <head>
         <link rel="icon" href="/assets/images/favicon.ico" />
         <link
           rel="stylesheet"

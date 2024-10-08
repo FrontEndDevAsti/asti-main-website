@@ -1,0 +1,308 @@
+/*--------------------------------------------------------------
+  1. accreditation bg 
+----------------------------------------------------------------*/
+.custom-tr-bg{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/*--------------------------------------------------------------
+  2. courses section card 
+----------------------------------------------------------------*/
+.specific-card-wrapper {
+    padding: 0;
+  }
+  .specific-card-content {
+    color: white;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border-radius: 0;
+    border: none;
+    cursor: pointer;
+  }
+  .specific-card-content:hover {
+    transform: scale(1.05);
+  }
+  .specific-card-icon {
+    font-size: 2rem;
+  }
+  .specific-card-title {
+    color: white;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+  .specific-card-desc {
+    font-size: 1rem;
+  }
+
+
+/*--------------------------------------------------------------
+  3. home search 
+----------------------------------------------------------------*/
+.home-search-select:focus, 
+.home-search-input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: #ff6b00!important; /* Optional: change the border color on focus */
+}
+
+.options-list {
+    padding-right: 27px;
+}
+
+.text-justify {
+    text-align: justify;
+  }
+
+.top-reason-custom-height {
+    min-height: 90vh !important;
+}  
+
+/*--------------------------------------------------------------
+  4. academic life section
+----------------------------------------------------------------*/
+.academic-life-custom-h{
+    height: 288px;
+}
+
+/*--------------------------------------------------------------
+  5. about section img
+----------------------------------------------------------------*/
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.hover-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 165, 0, 0.8); /* Orange with transparency */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 2;
+}
+
+.hovered .image-overlay {
+  opacity: 0;
+}
+
+.hovered .hover-content {
+  opacity: 1;
+}
+
+.image-container h4 {
+  color: white;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.hover-content p {
+  color: white;
+  font-size: 16px;
+  padding: 20px;
+}
+
+.cs_agency.agency_about_images_posation .cs_img_section_1,
+.cs_agency.agency_about_images_posation .cs_img_section_2,
+.cs_agency.agency_about_images_posation .cs_img_section_3 {
+  position: relative;
+}
+
+.cs_img_wrapper {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.cs_img_title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: white;
+  text-align: center;
+  transition: opacity 0.3s ease; 
+}
+
+.cs_overlay {
+  position: absolute;
+  top: 0;
+  left: -100%; 
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 165, 0, 0.7);
+  transition: left 0.5s ease; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.cs_overlay p {
+  color: white;
+  text-align: center;
+}
+
+.cs_overlay.active {
+  left: 0; 
+}
+
+.cs_img_title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+  transition: opacity 0.3s ease; 
+}
+
+.cs_overlay.active ~ .cs_img_title {
+  opacity: 0; 
+}
+
+.cs_title_head_3{
+  color: white !important;
+}
+
+.black-col-imp{
+  color: black !important;
+}
+
+/*--------------------------------------------------------------
+  6. Header 
+----------------------------------------------------------------*/
+.cs_nav_custom_span{
+  padding: 10px 0;
+  display: inline-flex;
+  position: relative;
+  height: inherit;
+  align-items: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.cs_angle_down_icon {
+  margin-left: 1px;
+}
+
+.submenu-columns {
+  display: flex; /* Use flexbox for layout */
+  width: 100%; /* Full width for the columns */
+}
+
+.submenu-column {
+  flex: 1; /* Each column takes equal space */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.submenu-item {
+  list-style: none; /* Remove default list styles */
+  padding: 5px 10px; /* Add some padding for spacing */
+}
+
+/*--------------------------------------------------------------
+  7. Footer 
+----------------------------------------------------------------*/
+.custom-block-display {
+  display: block;
+  margin-bottom: 5px; /* Adjust spacing as needed */
+}
+
+.footer-button {
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  background-color: #151515;
+  color: #eee;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.25s ease-out;
+  border:2px solid rgb(255, 255, 255);
+}
+
+.custom-footer-font-size{
+  font-size: 16px !important;
+  color: #C1C1C1 !important;
+  padding-left: 130px;
+}
+
+/*--------------------------------------------------------------
+  8. Accreditations 
+----------------------------------------------------------------*/
+.custom-h-accrdtn{
+  min-height:500px !important;
+}
+
+.accreditationCard {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.accreditationCard:hover {
+  transform: translateY(-10px);
+}
+
+.modal-backdrop {
+  display: none;
+}
+
+.modal-dialog {
+  max-width: 800px;
+}
+
+.modal-body img {
+  width: 100px;
+  height: auto;
+}
+
+.mod-close-icon{
+  border:none;
+  background:none;
+}
+
+.close-icon-size{
+  height:30px;
+  width:30px;
+}
+
+.custom-top-25{
+  top:25%;
+}
+
+@media (max-width: 768px) {
+  .accreditationCard img {
+    width: 70%;
+  }
+  .custom-top-25 {
+    top: 15%;
+  }
+}
+

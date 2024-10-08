@@ -44,6 +44,18 @@ const portfolio_data: PortfolioDataType[] = [
 		title: "Project Task Management",
 		des: "Digital Services / App Design",
 	},	 
+	{
+		id: 6,
+		img: portfolio_img_4,
+		title: "Project Task Management",
+		des: "Digital Services / App Design",
+	},
+	{
+		id: 7,
+		img: portfolio_img_5,
+		title: "Project Task Management",
+		des: "Digital Services / App Design",
+	},	 
 
 ];
 

@@ -2,6 +2,7 @@
 'use client' 
 import Link from 'next/link';
 import React from 'react';
+import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from "swiper/react";
 
 
@@ -15,9 +16,9 @@ interface DataType {
 const hero_slider: DataType[] = [
   {
     img: `/assets/img/hero_img_1.jpg`,
-    sub_title: "Creative Agency",
-    title: "Expert Digital Services for Your Own Business",
-    des: `Welcome to our digital agency! We specialize in helping businesses like yours succeed online. From website design and development to digital marketing and advertising, we have the tools and expertise to elevate your online presence. Let us help you lione evolving world of digital.`
+    sub_title: "Internationally Recognized & Accredited",
+    title: "Technical Academy For Vocational Educational Qualifications",
+    des: `The Job-Ready Skills that can put you to work. Being the top technical training institute in Dubai, UAE ASTI offers vocational and technical training to achieve higher educational qualifications with global accreditation. ASTI works to create an innovative, adaptable, and open educational system through our technical, vocational, professional, and liberal educational programs, the use of contemporary communication technology, and the adoption of the distance education approach.`
   },
   {
     img: `/assets/img/hero_img_1.jpg`,
@@ -42,6 +43,7 @@ const HeroHomeOne = () => {
         slidesPerView={1}
         autoplay={{ delay: 3000 }}
         pagination={{ clickable: true }}
+        // modules={[Autoplay]}
         className="cs_slider cs_slider_1">
         {hero_slider.map((item, index) =>
           <SwiperSlide key={index} className="swiper-slide">
@@ -73,7 +75,7 @@ const HeroHomeOne = () => {
                         <Link href="/portfolio"
                           className="cs_hero_btn cs_round_btn btn-item"><span></span>
                           Our
-                          Projects</Link>
+                          Programs</Link>
                       </div>
                     </div>
                   </div>

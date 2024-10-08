@@ -113,12 +113,16 @@ const PortfolioHomeFour = () => {
 
   return (
     <>
+    <div className="cs_height_150 cs_height_lg_60"></div>
       <section>
         <div className="container">
-          <div className="cs_section_heading cs_style_1">
+        <div className="cs_section_heading cs_style_1 cs_type_2">
             <div className="cs_section_heading_text">
+              <div className="cs_section_subtitle anim_div_ShowZoom">
+                Our Programs
+              </div>
               <h2 className="cs_section_title anim_heading_title">
-                Some Recent Project
+                Some Recent Case Study We Successfully Done
               </h2>
             </div>
           </div>
@@ -147,15 +151,21 @@ const PortfolioHomeFour = () => {
                 {items.map((item, i) => (
                   <React.Fragment key={i}>
                     <div className="col-md-4 mb-5 cs_project_card cs_ui_design cs_development anim_div_ShowDowns">
-                      <Link href="/portfolio-details">
-                        <div className="cs_project_card_img">
-                          <Image src={item.img} alt="recent_project_1" />
-                        </div>
-                        <div className="cs_project_card_text">
-                          <h6 className="cs_title">{item.title}</h6>
-                          <p className="cs_subtitle">{item.subtitle}</p>
-                        </div>
-                      </Link>
+                    <Link key={i} href="/portfolio-details" className="cs_portfolio cs_style_2">
+                <div className="cs_portfolio_img">
+                  <Image src={item.img} alt="Thumb" />
+                </div>
+                <div className="cs_portfolio_info">
+                  <div className="cs_text cs_style_1">
+                    <h6 className="cs_portfolio_title">
+                      {item.title}
+                    </h6>
+                    <div className="cs_portfolio_subtitle">
+                      {item.subtitle}
+                    </div>
+                  </div>
+                </div>
+              </Link>
                     </div> 
                   </React.Fragment>
                 ))}
