@@ -55,7 +55,7 @@ const AwardsHomeOne = ({style_2}: any) => {
 
   return (
     <>
-    {style_2 ? <div className="cs_height_145 cs_height_lg_60"></div> : null}
+    {style_2 ? <div className="cs_height_60 cs_height_lg_20"></div> : null}
       <section>
         <div className="container">
           <div className="cs_section_heading cs_style_1 cs_type_1 swiper-slide swiper-slide-active">

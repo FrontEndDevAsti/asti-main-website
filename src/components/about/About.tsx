@@ -56,7 +56,7 @@ const About = () => {
   return (
     <>
       <section>
-        <div className="cs_primary_bg">
+        {/* <div className="cs_primary_bg">
           <div className="container">
             <div className="cs_height_100 cs_height_lg_60"></div>
             <div className="cs_section_heading_hr cs_style_1">
@@ -73,7 +73,7 @@ const About = () => {
             <div className="cs_height_100 cs_height_lg_60"></div>
             {about_content.map((item, index) => (
               <div className="row mb-4" key={index}>
-                {/* Title for all screens */}
+            
                 <div
                   className={`col-md-4 col-sm-12 d-flex align-items-center justify-content-center ${
                     index % 2 === 0 ? "order-md-1" : "order-md-2"
@@ -87,7 +87,7 @@ const About = () => {
                     </div>
                   </div>
                 </div>
-                {/* Description for all screens */}
+              
                 <div
                   className={`col-md-8 col-sm-12 ${
                     index % 2 === 0 ? "order-md-2" : "order-md-1"
@@ -101,7 +101,29 @@ const About = () => {
             ))}
             <div className="cs_height_385 cs_height_lg_120"></div>
           </div>
-        </div>
+        </div> */}
+         {/* hero sec */}
+         <section>
+                <div className="cs_hero cs_style2 custom-h-accrdtn">
+                  <div
+                    className="cs_hero_bg cs_bg cs_parallax_bg"
+                    style={{
+                      backgroundImage: "url(/assets/img/design_banner.jpg)",
+                    }}
+                  ></div>
+
+                  <div className="container">
+                    <div className="cs_hero_text">
+                      <div className="anim_banner_text_left">
+                        <h1 className="cs_hero_title cs_hero_title_lg">
+                          About Us
+                        </h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <div className="cs_height_60 cs_height_lg_20"></div>
         <div className="container">
       <div className="cs_agency agency_about_images_posation">
         <div className="cs_img_section_1">

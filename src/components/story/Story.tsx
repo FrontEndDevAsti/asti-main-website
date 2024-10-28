@@ -56,13 +56,10 @@ const ourStories = [
       </div>
     ),
   },
-  {
-    url: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
-    type: "video",
-  },
-  {
-    url: "../../assets/img/portfolio_1.jpg",
-  },
+  // {
+  //   url: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+  //   type: "video",
+  // },
   {
     url: "https://images.unsplash.com/photo-1676321626679-2513969695d3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
   },

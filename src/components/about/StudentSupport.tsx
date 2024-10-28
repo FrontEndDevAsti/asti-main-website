@@ -71,7 +71,7 @@ const StudentSupport = () => {
           <div className="row">
             {/* First column */}
             <div className="col-lg-6">
-              <div className="cs_accordeon">
+              <div className="cs_accordeon custom-wdith-faq">
                 {faq_data.slice(0, 3).map((item, i) => (
                   <div
                     key={i}
@@ -117,7 +117,7 @@ const StudentSupport = () => {
 
             {/* Second column */}
             <div className="col-lg-6">
-              <div className="cs_accordeon">
+              <div className="cs_accordeon custom-wdith-faq">
                 {faq_data.slice(3).map((item, i) => (
                   <div
                     key={i + 3} // Adjust index for the second column

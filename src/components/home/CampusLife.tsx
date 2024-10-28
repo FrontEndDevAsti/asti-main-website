@@ -51,7 +51,7 @@ function CampusLife() {
           <div className="cs_height_80 cs_height_lg_40"></div>
           <div>
             <div className="cs_work cs_work_1">
-              <div className="cs_card_work cs_style_1">
+              <div className="cs_card_work cs_style_1 custom-justify-campus-life">
                 {service_data.map((item, i) => (
                   <div key={i} className="cs_card cs_mt_nthchild_0 anim_div_ShowLeftSide">
                     <div className="cs_card cs_style_1">
@@ -76,7 +76,7 @@ function CampusLife() {
         </div>
       </section>
             
-      <div className="cs_height_150 cs_height_lg_60"></div> 
+      <div className="cs_height_60 cs_height_lg_20"></div> 
     </div>
   )
 }

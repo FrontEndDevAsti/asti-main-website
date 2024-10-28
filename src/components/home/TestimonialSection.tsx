@@ -139,7 +139,6 @@ const Testimonial = ({ style_service }: any) => {
         </div>
         {style_service ? null : <div className="cs_height_150 cs_height_lg_60"></div>}
       </section>
-      {style_service ? null : <div className="cs_height_115 cs_height_lg_60"></div>}
 
     </>
   );

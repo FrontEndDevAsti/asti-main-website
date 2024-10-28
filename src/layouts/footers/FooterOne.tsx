@@ -52,27 +52,28 @@ const FooterOne = () => {
               </div> */}
               {/* Column 1: Logo and Map */}
               {/* <div className="col-lg-3 col-md-6 pb-3"> */}
-                <div className="cs_footer_info">
+              <div className="cs_footer_info">
                 <Image src={footer_logo} alt="Logo" />
                 <div className="pb-3 d-flex align-items-center">
-                <button className="footer-button">Apply Now</button>
-                <Link className="custom-footer-font-size" href={""}>Get Directions</Link>
-               
-              </div>
-              <div className="cs_footer_social pb-3">
+                  <button className="footer-button">Apply Now</button>
+                  <Link className="custom-footer-font-size" href={""}>
+                    Get Directions
+                  </Link>
+                </div>
+                {/* <div className="cs_footer_social pb-3">
                 <SocialLinks />
-              </div>
-                  {/* Google Map */}
-                  <div className="cs_footer_map">
-                    <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d115458.4214313509!2d55.301923169541894!3d25.268039827187266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3e5f5c35fc52779d%3A0xf21b7e5efced3ac8!2sBuilding%20%2329%205th%20St%20-%20Al%20Qusais%20-%20Al%20Qusais%202%20-%20Dubai!3m2!1d25.268062699999998!2d55.3843247!5e0!3m2!1sen!2sae!4v1728298063690!5m2!1sen!2sae"
-                      width="350"
-                      height="200"
-                      style={{ border: 0 }}
-                      allowFullScreen
-                      loading="lazy"
-                    ></iframe>
-                    {/* <iframe
+              </div> */}
+                {/* Google Map */}
+                <div className="cs_footer_map">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d115458.4214313509!2d55.301923169541894!3d25.268039827187266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3e5f5c35fc52779d%3A0xf21b7e5efced3ac8!2sBuilding%20%2329%205th%20St%20-%20Al%20Qusais%20-%20Al%20Qusais%202%20-%20Dubai!3m2!1d25.268062699999998!2d55.3843247!5e0!3m2!1sen!2sae!4v1728298063690!5m2!1sen!2sae"
+                    width="350"
+                    height="200"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                  ></iframe>
+                  {/* <iframe
                       src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d115458.4214313509!2d55.301923169541894!3d25.268039827187266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3e5f5c35fc52779d%3A0xf21b7e5efced3ac8!2sBuilding%20%2329%205th%20St%20-%20Al%20Qusais%20-%20Al%20Qusais%202%20-%20Dubai!3m2!1d25.268062699999998!2d55.3843247!5e0!3m2!1sen!2sae!4v1728298063690!5m2!1sen!2sae"
                       width="600"
                       height="450"
@@ -81,8 +82,8 @@ const FooterOne = () => {
                       loading="lazy"
                       referrerpolicy="no-referrer-when-downgrade"
                     ></iframe> */}
-                  </div>
                 </div>
+              </div>
               {/* </div> */}
               <ul className="cs_footer_contact_list cs_mp0 pb-3">
                 <li>
@@ -136,7 +137,7 @@ const FooterOne = () => {
                     {email}
                   </a>
                 </li>
-                <li>
+                <li className="d-flex justify-content-between align-items-center">
                   <i>
                     <svg
                       width="14"
@@ -157,8 +158,6 @@ const FooterOne = () => {
             </div>
             <div className="col-lg-6 offset-lg-1">
               <div className="cs_height_10 cs_height_lg_30"></div>
-
-            
 
               <ul className="cs_footer_contact_list cs_mp0">
                 <li>
@@ -207,7 +206,9 @@ const FooterOne = () => {
               </ul>
             </div>
           </div>
-        
+        </div>
+        <div className="cs_footer_social pb-3 custom-pr-20 d-flex justify-content-end">
+          <SocialLinks />
         </div>
         <div className="cs_copyright d-flex justify-content-around">
           <div>
@@ -215,7 +216,7 @@ const FooterOne = () => {
             <CopyRight />{" "}
           </div>
           <div>
-            <Link href={""}>Sitemap </Link> | 
+            <Link href={""}>Sitemap </Link> |
             <Link href={""}> Privacy Policy</Link>
           </div>
         </div>

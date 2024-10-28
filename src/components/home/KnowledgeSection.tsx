@@ -1,38 +1,101 @@
-import React from 'react';
+import React from "react";
+// Adjust the path as needed
 
-const KnowledgeSection = () => {
+const ProgramsComponent: React.FC = () => {
+  // Define your program data
+  const programs = [
+    {
+      id: 1,
+      title: "Middle Manager",
+      description:
+        "A middle-level professional looking to move up to senior management positions.",
+    },
+    {
+      id: 2,
+      title: "Senior Manager",
+      description:
+        "A seasoned professional who wishes to update their skills and knowledge to remain competitive in the evolving business world.",
+    },
+    {
+      id: 3,
+      title: "Career Switcher",
+      description:
+        "Professionals seeking a new industry or function, ready for a fresh challenge.",
+    },
+    {
+      id: 4,
+      title: "Working Parent",
+      description:
+        "A working parent aiming to climb the corporate ladder while managing their family commitments.",
+    },
+    {
+      id: 5,
+      title: "Future Entrepreneur",
+      description:
+        "An individual aiming to acquire the necessary business acumen to start their own venture.",
+    },
+    {
+      id: 6,
+      title: "Aspiring Graduate",
+      description:
+        "College dropouts ready to complete their degree and accelerate their career.",
+    },
+  ];
+
   return (
-    <section className="py-5">
-      <div className="container text-center" style={{ paddingLeft: '84px', paddingRight: '84px' }}>
-        {/* First row */}
-        <div className="row">
-          <div className="col-12 col-md-10 offset-md-1">
-            <p className="lead">
-            Our goal is to design educational programs that are uplifting, connect, and have a measurable effect—all while having a little bit of fun.
-            </p>
-          </div>
-        </div>
+    <>
+      <div className="cs_height_60 cs_height_lg_20"></div>
+      <section>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <div className="cs_section_heading cs_style_1 cs_type_1">
+                <div className="cs_section_heading_text">
+                  <h2 className="cs_section_title anim_text_writting">
+                    Career Advancements
+                  </h2>
+                </div>
+              </div>
+              <div className="cs_height_60 cs_height_lg_20"></div>
+            </div>
 
-        {/* Middle banner row */}
-        <div className="row my-4">
-          <div className="col-12">
-            <div className="d-inline-block px-4 py-2 bg-dark text-white font-weight-bold" style={{ transform: 'rotate(-2deg)', fontSize: '1.5rem' }}>
-            Learn at your own pace with flexible, accredited Programs
+            <div className="col-lg-4 no-tab anim_text">
+              {programs.slice(0, 3).map((program) => (
+                <div className="sec-wrap" key={program.id}>
+                  <div className="circle">{program.id}</div>
+                  <div className="sub">
+                    <h4>{program.title}</h4>
+                    <p>{program.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="col-lg-4 order no-tab">
+              <div className="img-wrap">
+                <img
+                  src="https://www.learnersuae.com/wp-content/uploads/2024/03/hero-4cf15eb5.png"
+                  alt="Hero Image"
+                />
+              </div>
+            </div>
+
+            <div className="col-lg-4 no-tab anim_text">
+              {programs.slice(3).map((program) => (
+                <div className="sec-wrap" key={program.id}>
+                  <div className="circle">{program.id}</div>
+                  <div className="sub">
+                    <h4>{program.title}</h4>
+                    <p className="">{program.description}</p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
-
-        {/* Third row */}
-        <div className="row">
-          <div className="col-12 col-md-10 offset-md-1">
-            <p className="lead">
-              <span className="text-success">Contact us</span> To find out more about our complete educational assistance, get in touch with us. We construct and layout personalized online courses all the way up to your full learning and skill enhancement.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 
-export default KnowledgeSection;
+export default ProgramsComponent;

@@ -7,6 +7,7 @@ import HeaderOne from "@/layouts/headers/HeaderOne";
 import VocationalEducation from "@/components/about/VocationalEducation";
 import Link from "next/link";
 import { IoClose } from "react-icons/io5";
+import AccrdtnCard from "@/components/cards/AccrdtnCard";
 
 // export const metadata = {
 //   title: "About Vixan - Digital  Creative Agency Next js Template",
@@ -270,6 +271,10 @@ const index = () => {
                   </div>
                 </div>
               </section>
+
+            {/* cards section */}
+                    <AccrdtnCard />
+
 
               {/* cta sec */}
               <section>

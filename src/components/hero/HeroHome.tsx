@@ -56,9 +56,9 @@ const HeroHomeThree = () => {
 
           <div className="container">
             <div className="cs_hero_text">
-              <div className="anim_banner_text_left">
+              {/* <div className="anim_banner_text_left">
                 <h1 className="cs_hero_title cs_hero_title_lg">{title_1}</h1>
-              </div>
+              </div> */}
               <div className="anim_banner_text_right">
                 <h1 className="cs_hero_title cs_hero_title_lg">{title_2}</h1>
               </div>
@@ -90,7 +90,6 @@ const HeroHomeThree = () => {
           </div> */}
         </div>
       </section>
-      <div className="cs_height_150 cs_height_lg_0"></div>
     </>
   );
 };

@@ -1,8 +1,10 @@
 'use client'
-import team_data from '@/data/team_data';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import team_avatar_1 from "@/assets/img/teamsimg1.jpg";
+import team_avatar_2 from "@/assets/img/teamsimg2.jpg";
+import { StaticImageData } from "next/image";
 
 type DataType = {
   sub_title: string;
@@ -17,6 +19,27 @@ const team_content: DataType = {
 }
 const { sub_title, title, title_2 } = team_content
 
+
+
+interface DataType2 {
+	id: number;
+	img: StaticImageData;
+	avatar_name: string;
+	designation: string;
+}
+const team_data: DataType2[] = [
+	{
+		id: 1,
+		img: team_avatar_1,
+		avatar_name: "Bruce Stewart",
+		designation: "PHP Developer",
+	},
+	{
+		id: 2,
+		img: team_avatar_2,
+		avatar_name: "Joseph Whorton",
+		designation: "UI/UX Designer",
+	},]
 
 const OurGraduations = ({ style_2, style_3 }: any) => {
   return (
@@ -36,7 +59,7 @@ const OurGraduations = ({ style_2, style_3 }: any) => {
           <div className="cs_height_100 cs_height_lg_60"></div>
 
           <div className="cs_team_section anim_blog col-lg-7">
-            {team_data.slice(0, 4).map((item, i) =>
+            {team_data.slice(0, 2).map((item, i) =>
               <div key={i} className="cs_team_img">
                 <Link href="/team-details">
                   <Image src={item.img} alt="Thumb" />
@@ -53,7 +76,7 @@ const OurGraduations = ({ style_2, style_3 }: any) => {
 
           </div>
         </div>
-        <div className="cs_height_150 cs_height_lg_60"></div>
+        <div className="cs_height_60 cs_height_lg_20"></div>
       </section>
 
 

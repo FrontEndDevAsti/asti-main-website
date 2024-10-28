@@ -1,8 +1,9 @@
-import { gsap } from "gsap";
-import jQuery from "jquery";
+import { gsap } from "gsap"; 
 
-export function buttonAnimation() {
- 
+
+const buttonAnimation = async () => {  
+	const jQuery = (await import("jquery")).default;
+
 	if (typeof window !== "undefined") {
 		(function ($) {
 			"use strict";
@@ -63,9 +64,11 @@ export function buttonAnimation() {
 					});
 				});
 			});
-
 		})(jQuery);
 	}
-	
+
 }
-	
+
+export default buttonAnimation
+
+

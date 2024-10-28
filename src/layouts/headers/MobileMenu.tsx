@@ -60,7 +60,7 @@ const menu_data: DataType[] = [
       },
       {
         id: 8,
-        title: "Affiliation and Accreditation",
+        title: "Affiliation & Accreditation",
         link: "/affiliation-and-accreditation",
       },
     ],
@@ -214,37 +214,48 @@ const MobileMenu = ({ active, navTitle, openMobileMenu }: any) => {
               navTitle === menu.title ? "active" : ""
             }`}
           >
-            {!menu.has_dropdown ? (
-              <Link href={menu.link}>{menu.title}</Link>
-            ) : (
-              <span className="cs_nav_custom_span">
-                {menu.title}{" "}
-                <IoChevronDownSharp className="cs_angle_down_icon" />
-              </span>
-            )}
-
+            <Link href={menu.link}>{menu.title}</Link>
             {menu.has_dropdown && (
-              <>
-                <ul
-                  className="cs_mega_wrapper"
-                  style={{
-                    display: navTitle === menu.title ? "block" : "none",
-                  }}
-                >
-                  {menu.sub_menu?.map((subMenu) => (
-                    <li key={subMenu.id}>
-                      <Link href={subMenu.link}>{subMenu.title}</Link>
-                    </li>
-                  ))}
-                </ul>
-                <span
-                  onClick={() => openMobileMenu(menu.title)}
-                  className={`cs_munu_dropdown_toggle ${
-                    navTitle === menu.title ? "active" : ""
-                  }`}
-                ></span>
-              </>
-            )}
+  <>
+    <ul
+      className={`cs_mega_wrapper ${
+        menu.id <= 3 && menu.has_dropdown ? "fixed-width" : "auto-width"
+      }`}
+      style={{
+        display: navTitle === menu.title ? "block" : "none",
+      }}
+    >
+      <div className="cs_column_wrapper">
+        <div className="cs_column">
+          {/* First column: Always display the first 4 submenu items */}
+          {menu.sub_menu?.slice(0, 4).map((subMenu) => (
+            <li key={subMenu.id}>
+              <Link href={subMenu.link}>{subMenu.title}</Link>
+            </li>
+          ))}
+        </div>
+
+        {/* Second column: Only display if there are more than 4 submenu items */}
+        {menu.sub_menu?.length && menu.sub_menu.length > 4 && (
+          <div className="cs_column">
+            {menu.sub_menu.slice(4).map((subMenu) => (
+              <li key={subMenu.id}>
+                <Link href={subMenu.link}>{subMenu.title}</Link>
+              </li>
+            ))}
+          </div>
+        )}
+      </div>
+    </ul>
+    <span
+      onClick={() => openMobileMenu(menu.title)}
+      className={`cs_munu_dropdown_toggle ${
+        navTitle === menu.title ? "active" : ""
+      }`}
+    ></span>
+  </>
+)}
+
           </li>
         ))}
       </ul>

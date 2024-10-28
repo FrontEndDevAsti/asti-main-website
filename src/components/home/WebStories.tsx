@@ -1,7 +1,6 @@
-
-import React from 'react';
-import Story from '@/components/story/Story'
-
+import React from "react";
+import Story from "@/components/story/Story";
+import Image from "next/image";
 
 interface DataType {
   title: string;
@@ -16,25 +15,23 @@ const hero_contact: DataType = {
     `Dev online. From website design`,
     `Implementation evolving world of digital to driv`,
     `Launch growth and reach your goals.`,
-  ]
-}
-const { title, description, features } = hero_contact
+  ],
+};
+const { title, description, features } = hero_contact;
 
 const WebStories = () => {
   return (
     <>
-      <div className="cs_height_219 cs_height_lg_120"></div> 
+      <div className="cs_height_60 cs_height_lg_20"></div>
       <section>
         <div className="container">
           <div className="cs_section_heading cs_style_1 cs_type_1">
             <div className="cs_section_heading_text">
-              <h2 className="cs_section_title anim_text_writting">
-                 {title}
-              </h2>
+              <h2 className="cs_section_title anim_text_writting">{title}</h2>
             </div>
           </div>
-          <div className="cs_height_100 cs_height_lg_60"></div>
-          <div className="cs_service_details">
+          <div className="cs_height_60 cs_height_lg_20"></div>
+          <div className="cs_service_details custom-gap">
             {/* <div className="cs_service_details_img">
               <div className="cs_style_img">
                 <Image src={banner_img} alt="service_details_banner" />
@@ -45,10 +42,49 @@ const WebStories = () => {
               <div className="cs_service_details_p">
                 <p className="anim_text">{description}</p>
               </div>
+           
+                <div className="row">
+                  <div className="column col-6">
+                    <div className="image-wrapper">
+                      <Image
+                        src="/assets/images/dummy.webp" // Replace with your actual image paths
+                        alt="Image 1"
+                        width={200}
+                        height={200}
+                        layout="responsive"
+                        className="image"
+                      />
+                    </div>
+
+                    <div className="image-wrapper">
+                      <Image
+                        src="/assets/images/dummy.webp"
+                        alt="Image 2"
+                        width={200}
+                        height={200}
+                        layout="responsive"
+                        className="image"
+                      />
+                    </div>
+                  </div>
+                  <div className="row col-6 justify-content-center align-items-center">
+                    <div className="image-wrapper">
+                      <Image
+                        src="/assets/images/dummy.webp"
+                        alt="Image 3"
+                        width={200}
+                        height={200}
+                        layout="responsive"
+                        className="image"
+                      />
+                    </div>
+                  </div>
+                </div>
+            
             </div>
           </div>
         </div>
-      </section> 
+      </section>
     </>
   );
 };

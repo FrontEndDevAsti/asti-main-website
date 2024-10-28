@@ -3,7 +3,7 @@
 ----------------------------------------------------------------*/
 
 .cs_agency.agency_about_images_posation {
-  margin-top: -255px;
+  // margin-top: -255px;
   display: flex;
   align-items: center;
   gap: 30px;
@@ -25,7 +25,7 @@
 @media screen and (max-width: 991px) {
   .cs_agency {
     &.agency_about_images_posation {
-      margin-top: -70px !important;
+      // margin-top: -70px !important;
       flex-wrap: wrap;
       .cs_img_section_1 {
         flex-basis: 100%;

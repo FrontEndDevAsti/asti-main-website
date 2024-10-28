@@ -113,7 +113,7 @@ const ProgramSection = () => {
 
   return (
     <>
-    <div className="cs_height_150 cs_height_lg_60"></div>
+    <div className="cs_height_60 cs_height_lg_20"></div>
       <section>
         <div className="container">
         <div className="cs_section_heading cs_style_1 cs_type_2">

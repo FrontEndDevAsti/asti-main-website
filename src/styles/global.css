@@ -1,72 +1,80 @@
 /*--------------------------------------------------------------
-  1. accreditation bg 
+  1. accreditation bg home
 ----------------------------------------------------------------*/
-.custom-tr-bg{
-    background-color: rgba(255, 255, 255, 0.5);
+.custom-tr-bg {
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 /*--------------------------------------------------------------
-  2. courses section card 
+  2. courses section card home
 ----------------------------------------------------------------*/
 .specific-card-wrapper {
-    padding: 0;
-  }
-  .specific-card-content {
-    color: white;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    transition: transform 0.3s ease;
-    border-radius: 0;
-    border: none;
-    cursor: pointer;
-  }
-  .specific-card-content:hover {
-    transform: scale(1.05);
-  }
-  .specific-card-icon {
-    font-size: 2rem;
-  }
-  .specific-card-title {
-    color: white;
-    margin-top: 1rem;
-    font-size: 1.5rem;
-  }
-  .specific-card-desc {
-    font-size: 1rem;
-  }
-
+  padding: 0;
+}
+.specific-card-content {
+  color: white;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+  border-radius: 0;
+  border: none;
+  cursor: pointer;
+}
+.specific-card-content:hover {
+  transform: scale(1.05);
+}
+.specific-card-icon {
+  font-size: 2rem;
+}
+.specific-card-title {
+  color: white;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+.specific-card-desc {
+  font-size: 1rem;
+}
 
 /*--------------------------------------------------------------
   3. home search 
 ----------------------------------------------------------------*/
-.home-search-select:focus, 
+.home-search-select:focus,
 .home-search-input:focus {
   outline: none !important;
   box-shadow: none !important;
-  border-color: #ff6b00!important; /* Optional: change the border color on focus */
+  border-color: #ff6b00 !important; /* Optional: change the border color on focus */
 }
 
 .options-list {
-    padding-right: 27px;
+  padding-right: 27px;
 }
 
 .text-justify {
-    text-align: justify;
-  }
+  text-align: justify;
+}
 
 .top-reason-custom-height {
-    min-height: 90vh !important;
-}  
+  min-height: 90vh !important;
+}
 
+.custom-justify-campus-life {
+  justify-content: center;
+}
 /*--------------------------------------------------------------
-  4. academic life section
+  4. academic life section home
 ----------------------------------------------------------------*/
-.academic-life-custom-h{
-    height: 288px;
+.academic-life-custom-h {
+  height: 288px;
+}
+
+@media screen and (max-width: 991px) {
+  .academic-life-custom-h {
+    height: auto;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -147,17 +155,17 @@
   z-index: 1;
   color: white;
   text-align: center;
-  transition: opacity 0.3s ease; 
+  transition: opacity 0.3s ease;
 }
 
 .cs_overlay {
   position: absolute;
   top: 0;
-  left: -100%; 
+  left: -100%;
   width: 100%;
   height: 100%;
   background-color: rgba(255, 165, 0, 0.7);
-  transition: left 0.5s ease; 
+  transition: left 0.5s ease;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -170,7 +178,7 @@
 }
 
 .cs_overlay.active {
-  left: 0; 
+  left: 0;
 }
 
 .cs_img_title {
@@ -180,25 +188,29 @@
   transform: translate(-50%, -50%);
   z-index: 1;
   text-align: center;
-  transition: opacity 0.3s ease; 
+  transition: opacity 0.3s ease;
 }
 
 .cs_overlay.active ~ .cs_img_title {
-  opacity: 0; 
+  opacity: 0;
 }
 
-.cs_title_head_3{
+.cs_title_head_3 {
   color: white !important;
 }
 
-.black-col-imp{
+.black-col-imp {
   color: black !important;
+}
+
+.custom-wdith-faq {
+  width: 631px;
 }
 
 /*--------------------------------------------------------------
   6. Header 
 ----------------------------------------------------------------*/
-.cs_nav_custom_span{
+.cs_nav_custom_span {
   padding: 10px 0;
   display: inline-flex;
   position: relative;
@@ -228,6 +240,27 @@
   padding: 5px 10px; /* Add some padding for spacing */
 }
 
+.cs_column_wrapper {
+  display: flex;
+}
+
+.cs_column {
+  flex: 1;
+}
+
+.cs_mega_wrapper {
+  display: block;
+}
+/* Fixed width for the first three options */
+.fixed-width {
+  width: 500px;
+}
+
+/* Auto width for the remaining options */
+.auto-width {
+  width: 200px;
+}
+
 /*--------------------------------------------------------------
   7. Footer 
 ----------------------------------------------------------------*/
@@ -245,20 +278,20 @@
   border-radius: 7px;
   cursor: pointer;
   transition: all 0.25s ease-out;
-  border:2px solid rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
 }
 
-.custom-footer-font-size{
+.custom-footer-font-size {
   font-size: 16px !important;
-  color: #C1C1C1 !important;
+  color: #c1c1c1 !important;
   padding-left: 130px;
 }
 
 /*--------------------------------------------------------------
   8. Accreditations 
 ----------------------------------------------------------------*/
-.custom-h-accrdtn{
-  min-height:500px !important;
+.custom-h-accrdtn {
+  min-height: 500px !important;
 }
 
 .accreditationCard {
@@ -283,18 +316,18 @@
   height: auto;
 }
 
-.mod-close-icon{
-  border:none;
-  background:none;
+.mod-close-icon {
+  border: none;
+  background: none;
 }
 
-.close-icon-size{
-  height:30px;
-  width:30px;
+.close-icon-size {
+  height: 30px;
+  width: 30px;
 }
 
-.custom-top-25{
-  top:25%;
+.custom-top-25 {
+  top: 20%;
 }
 
 @media (max-width: 768px) {
@@ -306,3 +339,513 @@
   }
 }
 
+.accrdtn-card {
+  width: 100%;
+  /* max-width: 250px; */
+  height: 250px;
+  background-color: #ff6b00; /* Orange color */
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.accrdtn-card:hover {
+  transform: translateY(-10px);
+  background-color: #ffa500; /* Lighter orange on hover */
+}
+
+.accrdtn-icon {
+  font-size: 3rem;
+  color: white;
+}
+
+.accrdtn-title {
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.accrdtn-card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*--------------------------------------------------------------
+  6. Learning Space
+----------------------------------------------------------------*/
+.custom-justify-learning-space {
+  justify-content: space-between;
+}
+
+/*--------------------------------------------------------------
+  7. Library
+----------------------------------------------------------------*/
+.materialcard-container {
+  margin-top: 50px;
+}
+
+.materialcard-card {
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.materialcard-icon-number {
+  width: 100%;
+}
+
+.materialcard-icon {
+  font-size: 40px;
+  color: black;
+}
+
+.materialcard-number {
+  font-size: 60px;
+  color: rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+}
+
+.materialcard-read-more {
+  height: 100%;
+}
+
+.materialcard-title {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.materialcard-link {
+  text-decoration: none;
+}
+
+.materialcard-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .materialcard-card {
+    max-width: 100%;
+  }
+}
+
+/*--------------------------------------------------------------
+  8. Lab
+----------------------------------------------------------------*/
+.lab-shedule-custom-h {
+  height: 220px;
+}
+
+/*--------------------------------------------------------------
+  9. knowldege sec
+----------------------------------------------------------------*/
+/* Container for the whole section with light violet background and curved corners */
+.section-container {
+  background-color: #fff7f0; /* Light violet background */
+  padding: 3rem;
+  border-radius: 20px;
+  max-width: 1200px; /* Centering the container */
+  margin: 0 auto;
+}
+
+/* Title styling */
+.section-title {
+  color: #ff6b00;
+  font-size: 2rem;
+}
+
+/* Description paragraph styling */
+.section-description {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Image styling */
+.section-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Card container */
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.row.no-gutters .col-md-3 {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* Card styling */
+.card-item {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  height: 250px; /* Equal height for all cards */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  border: 1px solid #ddd;
+}
+
+.card-item:hover {
+  transform: translateY(-10px);
+  background-color: #ff6b00; /* Purple background on hover */
+  color: white;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0;
+  /* color: #ff6b00; */
+}
+
+.card-item:hover .card-title {
+  color: white;
+}
+
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.carousel-nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  font-size: 30px;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.video-title {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/*CSS to customize the React Player play button icon */
+
+.react-player__play-icon {
+  border-width: 10px 0px 10px 15px !important;
+  border-color: transparent transparent transparent #ff6b00 !important;
+}
+
+.react-player__shadow {
+  background: white !important;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+}
+
+@media (max-width: 992px) {
+  .custm-p {
+    padding: 20px;
+  }
+}
+
+.custom-gap {
+  gap: 7%;
+}
+
+
+/*--------------------------------------------------------------
+  10. home circle sec
+----------------------------------------------------------------*/
+.circle {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  padding: 27px;
+  color: white;
+  text-align: center;
+  font-size: 27px;
+  background: #ff6b00;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub {
+  margin-left: 30px;
+}
+
+.sec-wrap {
+  display: flex;
+  min-height: 30%;
+}
+
+/*--------------------------------------------------------------
+  11. course page
+----------------------------------------------------------------*/
+
+.course-page-custom-card {
+  background-color: transparent;
+  border: 0.125em solid #000000;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  will-change: transform;
+}
+ 
+.course-page-custom-card:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+ }
+ 
+.arrow {
+  cursor: pointer;
+}
+
+.arrow span {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-bottom: 5px solid rgb(0, 0, 0);
+  border-right: 5px solid rgb(0, 0, 0);
+  transform: rotate(45deg);
+  margin: -15px;
+  animation: animate28797 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+
+@keyframes animate28797 {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
+}
+
+.gap-course-card{
+  gap:40px;
+}
+
+.arrw-right{
+  transform: rotate(270deg);
+}
+
+.arrw-left{
+  transform: rotate(90deg);
+}
+
+/* qa sec course page */
+.bg-light-grey{
+  background-color:#f6f7f9;
+}
+
+
+
+.pgm-circles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pgmcircle {
+  width: 50px;
+  height: 50px;
+  border: 2px dashed #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 120px;
+}
+
+.pgm-straight-line {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #ffffff;
+  margin: 0 20px;
+}
+
+.dashed-line {
+  width: 280px;
+  height: 2px;
+  background: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  border-top: 2px dashed #ffffff;
+}
+
+@media (max-width: 992px) {
+  .pgmcircle {
+    margin: 0 60px;
+  }
+  .dashed-line {
+    width: 160px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pgmcircle {
+    margin: 0 20px;
+  }
+  .dashed-line {
+    width: 75px;
+  }
+}
+
+.bg-black{
+  background-color: #101010;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-wrapper iframe, .video-wrapper video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.support-box {
+  border-radius: 8px;
+}
+
+@media (max-width: 992px) {
+  .support-box {
+    text-align: center;
+  }
+  .whatsapp-icon {
+    justify-content: center;
+  }
+}
+
+
+.coursesExploreContainer {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.coursesExploreCardWrapper {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.coursesExploreCard {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  position: relative; 
+  transition: all 0.3s ease-in-out;
+}
+
+.coursesExploreTitleWrapper {
+  position: absolute;
+  bottom: 0px;
+  left: 20px;
+}
+
+.coursesExploreTitle {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: bold;
+}
+
+.coursesExploreIcon {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.coursesExploreHoverCard:hover .coursesExploreHoverEffect {
+  opacity: 1;
+}
+
+.coursesExploreHoverEffect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ff6b00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.coursesExploreLetter {
+  font-size: 5rem;
+  color: white;
+  font-weight: bold;
+}
+
+.course-page-vid-sec{
+  height: 356px;
+  overflow: hidden;
+}
+
+.custom-pr-20{
+  padding-right:20px;
+}
