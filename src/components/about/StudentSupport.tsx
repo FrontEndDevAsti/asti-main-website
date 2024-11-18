@@ -76,7 +76,7 @@ const StudentSupport = () => {
                   <div
                     key={i}
                     onClick={() => toggleAccordion(i)}
-                    className={`cs_accordion_item ${
+                    className={`cs_accordion_item mb-3 ${
                       i === activeIndex ? "active cs_icon" : ""
                     }`}
                   >
@@ -122,7 +122,7 @@ const StudentSupport = () => {
                   <div
                     key={i + 3} // Adjust index for the second column
                     onClick={() => toggleAccordion(i + 3)}
-                    className={`cs_accordion_item ${
+                    className={`cs_accordion_item mb-3 ${
                       i + 3 === activeIndex ? "active cs_icon" : ""
                     }`}
                   >

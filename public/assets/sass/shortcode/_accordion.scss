@@ -4,8 +4,8 @@
 
 .cs_accordeon {
     .cs_accordion_item {
-        margin-bottom: 30px;
-        border: 1px solid #c1c1c1;
+        // margin-bottom: 30px;
+        border: 1px solid #000000;
         // width: 631px;
         @media (max-width: 1024px) { /* Target screens smaller than 1024px */
             width: auto; /* Set width to auto for iPads and smaller */
@@ -42,9 +42,9 @@
         &.cs_color_1 {
             border: none;
             .cs_accordion_header {
-                background-color: $black;
+                background-color: $white;
                 .cs_accordion_title {
-                    color: $white;
+                    color: $black;
                 }
             }
             .cs_accordion_body {

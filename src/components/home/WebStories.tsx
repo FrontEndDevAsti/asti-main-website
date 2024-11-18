@@ -47,7 +47,7 @@ const WebStories = () => {
                   <div className="column col-6">
                     <div className="image-wrapper">
                       <Image
-                        src="/assets/images/dummy.webp" // Replace with your actual image paths
+                        src="/assets/images/dummy.webp" 
                         alt="Image 1"
                         width={200}
                         height={200}
@@ -67,7 +67,7 @@ const WebStories = () => {
                       />
                     </div>
                   </div>
-                  <div className="row col-6 justify-content-center align-items-center">
+                  {/* <div className="row col-6 justify-content-center align-items-center">
                     <div className="image-wrapper">
                       <Image
                         src="/assets/images/dummy.webp"
@@ -78,7 +78,7 @@ const WebStories = () => {
                         className="image"
                       />
                     </div>
-                  </div>
+                  </div> */}
                 </div>
             
             </div>

@@ -61,7 +61,7 @@ const menu_data: DataType[] = [
       {
         id: 8,
         title: "Affiliation & Accreditation",
-        link: "/affiliation-and-accreditation",
+        link: "/accreditations",
       },
     ],
   },

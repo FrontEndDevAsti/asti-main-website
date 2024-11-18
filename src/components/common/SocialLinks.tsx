@@ -42,13 +42,13 @@ const hero_link_home_three: HDataType[] = [
   },
   {
     id: 6,
-    link: "https://www.dribbble.com",
+    link: "https://api.whatsapp.com/send?phone=971562192333",
     title: "Whatsapp",
     icon: <FaWhatsapp />, 
   },
   {
     id: 7,
-    link: "https://www.dribbble.com",
+    link: "https://www.tiktok.com/@astiacademy?lang=en",
     title: "Tiktok",
     icon: <FaTiktok />, 
   }

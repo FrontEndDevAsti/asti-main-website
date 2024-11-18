@@ -1,7 +1,14 @@
-// src/app/courses/[program]/page.tsx
 import React from 'react';
 import { notFound } from 'next/navigation';
 import { programData } from '@/data/program_data'; // Adjust import as needed
+
+import Wrapper from '@/layouts/Wrapper';
+import HeaderOne from '@/layouts/headers/HeaderOne';
+import FooterOne from '@/layouts/footers/FooterOne';
+import SingleProgramPage from '@/components/SingleProgramPage/SingleProgramPage';
+
+// Define a type for program keys
+type ProgramKeys = keyof typeof programData;
 
 export async function generateStaticParams() {
   return Object.keys(programData).map((program) => ({
@@ -9,7 +16,7 @@ export async function generateStaticParams() {
   }));
 }
 
-const ProgramPage = ({ params }: { params: { program: string } }) => {
+const ProgramPage = ({ params }: { params: { program: ProgramKeys } }) => {
   const { program } = params;
   const programDetails = programData[program];
 
@@ -18,17 +25,11 @@ const ProgramPage = ({ params }: { params: { program: string } }) => {
   }
 
   return (
-    <div>
-      <h1>{programDetails.name}</h1>
-      <p>{programDetails.description}</p>
-      <p>Duration: {programDetails.duration}</p>
-      <h2>Subjects:</h2>
-      <ul>
-        {programDetails.subjects.map((subject:any, index:any) => (
-          <li key={index}>{subject}</li>
-        ))}
-      </ul>
-    </div>
+    <>
+      <HeaderOne />
+      <SingleProgramPage program={programDetails} />
+      <FooterOne />
+    </>
   );
 };
 
