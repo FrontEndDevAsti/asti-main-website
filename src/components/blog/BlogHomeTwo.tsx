@@ -51,7 +51,7 @@ const BlogHomeTwo = ({ style_2 }: any) => {
               <SwiperSlide key={i} className="swiper-slide">
                 <div className="cs_post cs_style_1">
                   <Link href="/blog-details" className="cs_post_thumb">
-                    <Image src={item.img} alt="Thumb" />
+                    <Image src={item.main_img} alt="Thumb" />
                   </Link>
                   <div className="cs_post_info">
                     <h2 className="cs_post_title">
