@@ -6,7 +6,7 @@ const ProgramsComponent: React.FC = () => {
   const programs = [
     {
       id: 1,
-      title: "Middle Manager",
+      title: "Middle Managerrr",
       description:
         "A middle-level professional looking to move up to senior management positions.",
     },
@@ -63,9 +63,17 @@ const ProgramsComponent: React.FC = () => {
               {programs.slice(0, 3).map((program) => (
                 <div className="sec-wrap" key={program.id}>
                   <div className="circle">{program.id}</div>
-                  <div className="sub">
-                    <h4>{program.title}</h4>
+                  {/* <div className="sub">
+                    <h2 className="cs_section_title anim_text_writting">
+                      {program.title}
+                    </h2>
                     <p>{program.description}</p>
+                  </div> */}
+                  <div className="cs_specialization cs_section_heading cs_style_1">
+                    <div className="sub cs_section_heading_text">
+                      <h4 className="cs_section_title_4">{program.title}</h4>
+                      <p>{program.description} </p>
+                    </div>
                   </div>
                 </div>
               ))}
@@ -84,9 +92,11 @@ const ProgramsComponent: React.FC = () => {
               {programs.slice(3).map((program) => (
                 <div className="sec-wrap" key={program.id}>
                   <div className="circle">{program.id}</div>
-                  <div className="sub">
-                    <h4>{program.title}</h4>
-                    <p className="">{program.description}</p>
+                  <div className="cs_specialization cs_section_heading cs_style_1">
+                    <div className="sub cs_section_heading_text">
+                      <h4 className="cs_section_title_4">{program.title}</h4>
+                      <p>{program.description} </p>
+                    </div>
                   </div>
                 </div>
               ))}

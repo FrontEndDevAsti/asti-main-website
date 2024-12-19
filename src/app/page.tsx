@@ -37,6 +37,7 @@ import WebStories from "@/components/home/WebStories";
 import HeroHome from "@/components/hero/HeroHome";
 import KnowledgeSection from "@/components/home/KnowledgeSection";
 import VideoSwiper from "@/components/swiper/VideoSwiper"
+import HomeAccreditation from "@/components/home/HomeAccreditation";
 
 // export const metadata = {
 //   title: "Vixan - Digital  Creative Agency Next js Template",
@@ -64,7 +65,7 @@ const index = () => {
             <VideoSwiper />
             <ProgramSection />
             <AwardsHomeOne />
-            <HeroHomeThree />
+            <HomeAccreditation />
             <CampusLife />
             <OurGraduations />
             <TestimonialSection />

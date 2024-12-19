@@ -26,7 +26,7 @@ const blog_data: DataType[] = [
   {
     id: 1,
     img: blog_img_1,
-    title: `Reasons Business Needs a Agency`,
+    title: `6 Reasons Why Earning a Diploma in IT Engineering in the United Arab Emirates Is a best Career Choice`,
     des: `The art of creative thinking could be a blog that explores the various ways in which people.`,
   },
   {
@@ -91,7 +91,7 @@ const BlogArea = () => {
             <div className="cs_section_heading cs_style_1 cs_type_1">
               <div className="cs_section_heading_text">
                 <h2 className="cs_section_title anim_heading_title">
-                  New Day <br /> New Inspiration
+                  Blogs & Articles
                 </h2>
               </div>
             </div>
@@ -106,7 +106,7 @@ const BlogArea = () => {
             {blog_data.map((item, i) => (
               <div key={i} className={`col-md-4 ${item.id === 2 ? 'mt-0 mt-md-5' : ''} ${item.id === 5 ? 'mt-0 mt-md-5' : ''} ${item.id === 8 ? 'mt-0 mt-md-5' : ''}`}>
                 <div className="anim_div_ShowDowns">
-                  <Link href="/blog-details" className="cs_blog cs_style_1">
+                  <a href="/blog/diploma-in-it-engineering-uae" className="cs_blog cs_style_1">
                     <div>
                       <Image src={item.img} alt="post_1" />
                     </div>
@@ -118,7 +118,7 @@ const BlogArea = () => {
                         {item.des}
                       </p>
                     </div>
-                  </Link>
+                  </a>
                 </div>
               </div>
             ))}

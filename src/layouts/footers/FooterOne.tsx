@@ -53,7 +53,7 @@ const FooterOne = () => {
               {/* Column 1: Logo and Map */}
               {/* <div className="col-lg-3 col-md-6 pb-3"> */}
               <div className="cs_footer_info">
-                <Image src={footer_logo} alt="Logo" />
+                <Image src={footer_logo} alt="Logo" className="footer_logo" />
                 <div className="pb-3 d-flex align-items-center">
                   <button className="footer-button">Apply Now</button>
                   <Link className="custom-footer-font-size" href={""}>

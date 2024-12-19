@@ -33,11 +33,11 @@ const WebStories = () => {
           <div className="cs_height_60 cs_height_lg_20"></div>
           <div className="cs_service_details custom-gap">
             {/* <div className="cs_service_details_img">
-              <div className="cs_style_img">
+              <div className="cs_style_img"> 
                 <Image src={banner_img} alt="service_details_banner" />
               </div>
             </div> */}
-            <Story />
+            {/* <Story /> */}
             <div className="cs_service_details_text">
               <div className="cs_service_details_p">
                 <p className="anim_text">{description}</p>
@@ -51,7 +51,6 @@ const WebStories = () => {
                         alt="Image 1"
                         width={200}
                         height={200}
-                        layout="responsive"
                         className="image"
                       />
                     </div>
@@ -62,7 +61,6 @@ const WebStories = () => {
                         alt="Image 2"
                         width={200}
                         height={200}
-                        layout="responsive"
                         className="image"
                       />
                     </div>

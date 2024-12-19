@@ -27,6 +27,9 @@ const HeroHomeThree = () => {
   return (
     <>
       <section>
+
+
+
         <div className="cs_hero cs_style2">
        {/* Background Video */}
        <video
@@ -34,9 +37,14 @@ const HeroHomeThree = () => {
             className="cs_hero_bg cs_bg cs_parallax_bg"
             autoPlay
             loop
-            muted 
-            controls // Optionally, you can add this to give users control over video playback
-            style={{ objectFit: 'cover', width: '100%', height: '100%', position: 'absolute', top: '0', left: '0', zIndex: '-1' }}
+            muted
+            playsInline
+            // width={1000} 
+            // height={1000}
+            // controls
+            preload='auto' // Optionally, you can add this to give users control over video playback
+            // style={{ objectFit: 'cover', position: 'absolute', top: '0', left: '0', zIndex: '-1' }}
+            style={{ objectFit: 'cover' }}
           >
             <source src="../../assets/videos/promo.mp4" type="video/mp4" />
             Your browser does not support the video tag.
@@ -56,9 +64,6 @@ const HeroHomeThree = () => {
 
           <div className="container">
             <div className="cs_hero_text">
-              {/* <div className="anim_banner_text_left">
-                <h1 className="cs_hero_title cs_hero_title_lg">{title_1}</h1>
-              </div> */}
               <div className="anim_banner_text_right">
                 <h1 className="cs_hero_title cs_hero_title_lg">{title_2}</h1>
               </div>

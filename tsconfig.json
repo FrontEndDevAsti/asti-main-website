@@ -31,6 +31,6 @@
       "@/plugins/*": ["./src/plugins/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/data/program_data.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/data/program_data.js", "src/data/blogs_data.js"],
   "exclude": ["node_modules"]
 }

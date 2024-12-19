@@ -4,6 +4,8 @@ import avatar_img from "@/assets/img/avatar_1.jpg";
 // Dummy program data
 export const programData = {
   "civil-eng": {
+    metaTitle:"Civil Diploma Course in Dubai, UAE | Career Focused Training",
+    metaDesc:"Study HND Construction Management /Higher International Diploma in Civil Engineering at ASTI Academy Dubai, UAE. Online/ On Campus. UK Curriculum.Affordable Fee",
     name: "Higher International Diploma In Dubai Civil Engineering",
     mode: "Online | On Campus | Blended",
     duration: "2 years",
@@ -373,6 +375,8 @@ export const programData = {
     ],
   },
   "mech-eng": {
+    metaTitle:"Civil Diploma Course in Dubai, UAE | Career Focused Training",
+    metaDesc:"Study HND Construction Management /Higher International Diploma in Civil Engineering at ASTI Academy Dubai, UAE. Online/ On Campus. UK Curriculum.Affordable Fee",
     name: "Mechanical Engineering",
     description:
       "Focuses on the design, construction, and use of machines. Learn mechanical systems, manufacturing, and thermodynamics.",

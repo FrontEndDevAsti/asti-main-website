@@ -56,52 +56,7 @@ const About = () => {
   return (
     <>
       <section>
-        {/* <div className="cs_primary_bg">
-          <div className="container">
-            <div className="cs_height_100 cs_height_lg_60"></div>
-            <div className="cs_section_heading_hr cs_style_1">
-              <div className="cs_hr_design"></div>
-              <div className="cs_section_heading cs_style_1 cs_color_1">
-                <div className="cs_section_heading_text">
-                  <h2 className="cs_section_title anim_heading_title">
-                    About Asti Academy
-                  </h2>
-                </div>
-              </div>
-              <div className="cs_hr_design"></div>
-            </div>
-            <div className="cs_height_100 cs_height_lg_60"></div>
-            {about_content.map((item, index) => (
-              <div className="row mb-4" key={index}>
-            
-                <div
-                  className={`col-md-4 col-sm-12 d-flex align-items-center justify-content-center ${
-                    index % 2 === 0 ? "order-md-1" : "order-md-2"
-                  } mb-3`}
-                >
-                  <div className="cs_section_heading cs_style_1 cs_color_1">
-                    <div className="cs_section_heading_text">
-                      <h3 className="cs_section_title_3 anim_div_ShowLeftSide">
-                        {item.title}
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-              
-                <div
-                  className={`col-md-8 col-sm-12 ${
-                    index % 2 === 0 ? "order-md-2" : "order-md-1"
-                  }`}
-                >
-                  <div className="anim_div_ShowRightSide">
-                    <p className="cs_ternary_color text-justify">{item.des}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-            <div className="cs_height_385 cs_height_lg_120"></div>
-          </div>
-        </div> */}
+     
          {/* hero sec */}
          <section>
                 <div className="cs_hero cs_style2 custom-h-accrdtn">

@@ -1,4 +1,6 @@
 "use client";
+import { programData } from '@/data/program_data'; // Adjust import as needed
+
 import SearchSection from "@/components/home/SearchSection";
 import FooterOne from "@/layouts/footers/FooterOne";
 import HeaderOne from "@/layouts/headers/HeaderOne";
@@ -30,7 +32,7 @@ const cardData = [
     text: "Some quick example text to build on the card title and make up the bulk of the card's content.",
     image:
       "https://cphfcrflaa.cloudimg.io/_bcuimages/expert-personal-statement-tips-main-131497911314454642.jpg?w=380&h=213&func=crop&gravity=smart&org_if_sml=1",
-    link: "/anc",
+    link: "/courses/civil-eng",
   },
   {
     title: "Card 2",
@@ -237,6 +239,40 @@ function page() {
               </div>
             </div>
             <div className="cs_height_60 cs_height_lg_20"></div>
+
+            <div className="cs_height_60 cs_height_lg_20"></div>
+      <div className="container">
+        <h4 className="anim_heading_title text-center">Find your course and next steps</h4>
+        <div className="row justify-content-center">
+          {/* Iterate over the programData to generate dynamic course cards */}
+          {Object.keys(programData).map((programKey, index) => {
+             const program = programData[programKey as keyof typeof programData]; // Access the program details
+            return (
+              <div className="col-lg-4 col-md-6 mb-4 d-flex justify-content-center" key={index}>
+                <div className="card">
+                  <img
+                    className="card-img-top"
+                    src="/path/to/default/image.jpg" // Add a fallback image if not defined
+                    alt={`Card ${index + 1} image`}
+                  />
+                  <div className="card-body">
+                    <h5 className="card-title">{program.name}</h5>
+                    <p className="card-text">"Learn more about this course."</p>
+                    {/* Generate dynamic link for each program */}
+                    <button
+                      onClick={() => (window.location.href = `/courses/${programKey}`)} // Dynamic route
+                      className="course-page-custom-card"
+                    >
+                      Go somewhere
+                    </button>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+      <div className="cs_height_60 cs_height_lg_20"></div>
 
             {/* ENTIRE COURSE SEC */}
             <section>

@@ -1,6 +1,11 @@
 import "@/styles/index.scss";
 import "@/styles/global.css";
 
+export const metadata = {
+  title: "ASTI ACADEMY",
+};
+
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -14,7 +19,7 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;900&family=Kanit:wght@400;500;600;700&display=swap"
         />
-        <title>ASTI Academy</title>
+        {/* <title>ASTI Academy</title> */}
       </head>
 
       <body>{children}</body>

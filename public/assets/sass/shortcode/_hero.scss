@@ -101,7 +101,7 @@
 		font-size: 60px;
 		font-weight: 900;
 		margin-bottom: 0;
-		line-height: 155px;
+		// line-height: 155px;
 	}
 	.textupdowns {
 		animation: textupdown 4s ease-in-out infinite;
@@ -519,8 +519,8 @@
 		min-height: calc(100vh + 50px);
 		.cs_hero_text {
 			.cs_hero_title.cs_hero_title_lg {
-				font-size: 48px;
-				line-height: 60px;
+				font-size: 40px;
+				line-height: 50px;
 			}
 		}
 	}

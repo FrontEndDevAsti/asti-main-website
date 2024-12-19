@@ -46,7 +46,7 @@ const menu_data: DataType[] = [
       {
         id: 5,
         title: "Careers",
-        link: "/careers",
+        link: "/courses",
       },
       {
         id: 6,
