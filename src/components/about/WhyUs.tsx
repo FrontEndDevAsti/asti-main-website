@@ -89,23 +89,6 @@ const WhyUs = ({ style_2 }: any) => {
               <div className="cs_height_70"></div>
 
               <div className="d-flex gap-4 align-items-center flex-wrap flex-lg-nowrap justify-content-center">
-                {/* <div className="anim_text">
-                  <p className="cs_font_16 cs_secend_section">
-                    {des}
-                  </p>
-                  <div className="cs_service_back_btn">
-                    <a href="#" className="cs_style_1 cs_color_1">
-                      <span className="cs_font_18">Learn More</span> 
-                      {' '}
-                      <svg width="19" height="13" viewBox="0 0 19 13" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M18.5303 7.03033C18.8232 6.73744 18.8232 6.26256 18.5303 5.96967L13.7574 1.1967C13.4645 0.903806 12.9896 0.903806 12.6967 1.1967C12.4038 1.48959 12.4038 1.96447 12.6967 2.25736L16.9393 6.5L12.6967 10.7426C12.4038 11.0355 12.4038 11.5104 12.6967 11.8033C12.9896 12.0962 13.4645 12.0962 13.7574 11.8033L18.5303 7.03033ZM0 7.25H18V5.75H0V7.25Z"
-                          fill="currentColor"></path>
-                      </svg>
-                    </a>
-                  </div>
-                </div> */}
                 <div className="cs_startup_agency cs_card cs_mr_left">
                   <h6>{boxtitle}</h6>
                   <div className="d-flex align-items-center">
@@ -214,7 +197,7 @@ const WhyUs = ({ style_2 }: any) => {
                       </p>
                     </div>
                     <p className="cs_font_16 cs_mp0">
-                      {item.des_2}
+                      {item.des_2} 
                     </p>
                   </div>
                 )}

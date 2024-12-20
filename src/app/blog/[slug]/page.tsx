@@ -2,7 +2,6 @@
 
 // import { useEffect, useState } from "react";
 import blog_data from "@/data/blogs_data";
-import BlogHomeOne from "@/components/blog/BlogHomeOne";
 import Image from "next/image";
 import { StaticImageData } from "next/image";
 import blog_detaisl_img_1 from "@/assets/img/blog_detals_banner.jpg";
@@ -14,6 +13,7 @@ import Wrapper from "@/layouts/Wrapper";
 import HeaderOne from "@/layouts/headers/HeaderOne";
 import AboutHomeFour from "@/components/about/AboutHomeFour";
 import FooterOne from "@/layouts/footers/FooterOne";
+import BlogHomeTwo from "@/components/blog/BlogHomeTwo";
 
 export async function generateMetadata({ params }: { params: { slug: string } }) {
   const blog = blog_data.find((blog) => blog.slug === params.slug);
@@ -164,7 +164,7 @@ const SinglePage = ({ params }: SinglePageProps) => {
 
             <div className="cs_height_100 cs_height_lg_50"></div>
 
-            <BlogHomeOne style_3={true} />
+            <BlogHomeTwo />
             <AboutHomeFour />
           </main>
           <FooterOne />

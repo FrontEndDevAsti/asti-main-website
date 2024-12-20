@@ -1,86 +1,36 @@
+'use client'
+import React, { useState } from "react";
+import Image from "next/image";
+import blog_data from "@/data/blogs_data";
 
-
-import React from 'react';
-import Link from 'next/link';
-import Image, { StaticImageData } from 'next/image';
-
-import blog_img_1 from "@/assets/img/post_1.jpg";
-import blog_img_2 from "@/assets/img/post_2.jpg";
-import blog_img_3 from "@/assets/img/post_3.jpg";
-import blog_img_4 from "@/assets/img/post_4.jpg";
-import blog_img_5 from "@/assets/img/post_5.jpg";
-import blog_img_6 from "@/assets/img/post_6.jpg";
-import blog_img_7 from "@/assets/img/post_7.jpg";
-import blog_img_8 from "@/assets/img/post_8.jpg";
-import blog_img_9 from "@/assets/img/post_9.jpg";
-
-
-interface DataType {
-  id: number;
-  img: StaticImageData;
-  title: string;
-  des: string;
+interface TruncatedTextProps {
+  text: string;
+  maxLength?: number;
 }
 
-const blog_data: DataType[] = [
-  {
-    id: 1,
-    img: blog_img_1,
-    title: `6 Reasons Why Earning a Diploma in IT Engineering in the United Arab Emirates Is a best Career Choice`,
-    des: `The art of creative thinking could be a blog that explores the various ways in which people.`,
-  },
-  {
-    id: 2,
-    img: blog_img_2,
-    title: `Reasons Business Needs a Agency`,
-    des: `The art of creative thinking could be a blog that explores the various ways in which people.`,
-  },
-  {
-    id: 3,
-    img: blog_img_3,
-    title: `Reasons Business Needs a Agency`,
-    des: `The art of creative thinking could be a blog that explores the various ways in which people.`,
-  },
-  {
-    id: 4,
-    img: blog_img_4,
-    title: `Reasons Business Needs a Agency`,
-    des: `The art of creative thinking could be a blog that explores the various ways in which people.`,
-  },
-  {
-    id: 5,
-    img: blog_img_5,
-    title: `Reasons Business Needs a Agency`,
-    des: `The art of creative thinking could be a blog that explores the various ways in which people.`,
-  },
-  {
-    id: 6,
-    img: blog_img_6,
-    title: `Reasons Business Needs a Agency`,
-    des: `The art of creative thinking could be a blog that explores the various ways in which people.`,
-  },
-  {
-    id: 7,
-    img: blog_img_7,
-    title: `Reasons Business Needs a Agency`,
-    des: `The art of creative thinking could be a blog that explores the various ways in which people.`,
-  },
-  {
-    id: 8,
-    img: blog_img_8,
-    title: `Reasons Business Needs a Agency`,
-    des: `The art of creative thinking could be a blog that explores the various ways in which people.`,
-  },
-  {
-    id: 9,
-    img: blog_img_9,
-    title: `Reasons Business Needs a Agency`,
-    des: `The art of creative thinking could be a blog that explores the various ways in which people.`,
-  },
-]
+const TruncatedText: React.FC<TruncatedTextProps> = ({
+  text,
+  maxLength = 80,
+}) => {
+  const truncateDescription = (desc: string, maxLength: number): string => {
+    return desc.length > maxLength
+      ? desc.substring(0, maxLength) + "..."
+      : desc;
+  };
 
+  return (
+    <p className="cs_blog_subtitle">{truncateDescription(text, maxLength)}</p>
+  );
+};
 
 const BlogArea = () => {
+   // State to manage how many blogs are visible
+   const [visibleBlogs, setVisibleBlogs] = useState(1);
+
+   // Function to handle loading more blogs
+   const loadMoreBlogs = () => {
+     setVisibleBlogs((prev) => prev + 9); // Load 9 more blogs on each click
+   };
   return (
     <>
       <div className="cs_height_219 cs_height_lg_120"></div>
@@ -90,9 +40,7 @@ const BlogArea = () => {
           <div className="container">
             <div className="cs_section_heading cs_style_1 cs_type_1">
               <div className="cs_section_heading_text">
-                <h2 className="cs_section_title anim_heading_title">
-                  Blogs & Articles
-                </h2>
+                <h2 className="cs_section_title anim_heading_title">Blogs</h2>
               </div>
             </div>
           </div>
@@ -103,35 +51,57 @@ const BlogArea = () => {
       <section>
         <div className="container">
           <div className="row">
-            {blog_data.map((item, i) => (
-              <div key={i} className={`col-md-4 ${item.id === 2 ? 'mt-0 mt-md-5' : ''} ${item.id === 5 ? 'mt-0 mt-md-5' : ''} ${item.id === 8 ? 'mt-0 mt-md-5' : ''}`}>
+          {blog_data.slice(0, visibleBlogs).map((blog, i) => (
+              <div
+                key={i}
+                className={`col-md-4 ${blog.id === 2 ? "mt-0 mt-md-5" : ""} ${
+                  blog.id === 5 ? "mt-0 mt-md-5" : ""
+                } ${blog.id === 8 ? "mt-0 mt-md-5" : ""}`}
+              >
                 <div className="anim_div_ShowDowns">
-                  <a href="/blog/diploma-in-it-engineering-uae" className="cs_blog cs_style_1">
+                  <a href={`/blog/${blog.slug}`} className="cs_blog cs_style_1">
                     <div>
-                      <Image src={item.img} alt="post_1" />
+                      <Image src={blog.main_img} alt="post_1" />
                     </div>
                     <div className="cs_blog_info">
-                      <h6 className="cs_blog_title">
-                        {item.title}
-                      </h6>
-                      <p className="cs_blog_subtitle">
-                        {item.des}
-                      </p>
+                      <h6 className="cs_blog_title">{blog.title}</h6>
+
+                      <TruncatedText
+                        text={blog.metaDescription}
+                        maxLength={80}
+                      />
                     </div>
                   </a>
                 </div>
               </div>
             ))}
-
           </div>
           <div className="cs_height_100 cs_height_lg_60"></div>
-          <div>
-            <div className="cs_hero_btn_wrap text-center">
-              <div className="cs_round_btn_wrap">
-                <a href="#" className="cs_hero_btn cs_round_btn btn-item"><span></span> Load More</a>
+            {/* Only show the "Load More" button if there are more blogs to show */}
+            {visibleBlogs < blog_data.length && (
+            <div>
+              <div className="cs_hero_btn_wrap text-center">
+                <div className="cs_round_btn_wrap">
+                  <a
+                    // href="#"
+                    className="cs_hero_btn cs_round_btn btn-item"
+                    onClick={loadMoreBlogs}
+                  >
+                    <span></span> Load More
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
+          )}
+          {/* <div>
+            <div className="cs_hero_btn_wrap text-center">
+              <div className="cs_round_btn_wrap">
+                <a href="#" className="cs_hero_btn cs_round_btn btn-item">
+                  <span></span> Load More
+                </a>
+              </div>
+            </div>
+          </div> */}
         </div>
       </section>
     </>
